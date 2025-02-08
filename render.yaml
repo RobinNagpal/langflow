@@ -6,7 +6,7 @@ services:
     dockerfilePath: ./docker/render.Dockerfile
     repo: https://github.com/langflow-ai/langflow
     branch: main
-    plan: standard
+    plan: starter
     healthCheckPath: /health_check
     autoDeploy: false
     envVars:
@@ -15,7 +15,7 @@ services:
       - key: LANGFLOW_HOST
         value: 0.0.0.0
       - key: LANGFLOW_PORT
-        # default render port https://docs.render.com/web-services#port-binding
+        # default render port https://docs.render.com/web-se rvices#port-binding
         value: 10000
       - key: LANGFLOW_LOG_LEVEL
         value: INFO
